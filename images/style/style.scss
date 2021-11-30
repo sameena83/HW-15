@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font-stack: Arial, Helvetica, sans-serif;
+$light-color: #f2f2f2;
+$primary-color: #111111;
+$font: Mulish;
+$num_col:3;
+
+
+
+$secondary-color: #4a4ff2;
+
+// Set text color based on bg
+
+body {
+  background-color: $light-color;
+  font-family: $font-stack;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 40px;
+  }
+
+  li {
+    padding: 15px;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  a:hover {
+    color: $secondary-color;
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  .left {
+    margin-top: 10px;
+  }
+
+  .left__header {
+    line-height: 28px;
+    color: $secondary-color;
+  }
+  .left__desc {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    font-family: $font;
+  }
+  .left__desc-design {
+    color: $secondary-color;
+  }
+
+  .right {
+    padding-right: 10px;
+  }
+  .right__desc {
+    font-family: $font;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+    color: $primary-color;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+  }
+  .right__imaage{
+
+    background: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+.m-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+
+  
+}
